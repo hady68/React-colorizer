@@ -1,38 +1,45 @@
-.App {
+.colorizer {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; 
+height: 100vh; 
+}
+
+.colorizer .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 13rem;
+  height: 13rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 3px solid #ffffff;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter{
+  text-align: center;
+}
+.colorizer button {
+  cursor: pointer;
+  background-color: #000000; /* Button background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove default button border */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Add some padding */
+  margin: 0.5rem;
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.colorizer button:hover {
+  background-color: #fff; /* Change background color on hover */
+  color: #000000;
 }
