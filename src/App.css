@@ -43,3 +43,29 @@ height: 100vh;
   background-color: #fff; /* Change background color on hover */
   color: #000000;
 }
+
+.copy-success {
+  background-color: #4caf50; /* Background color for success message */
+  color: #fff; /* Text color */
+  padding: 10px; /* Padding around the message */
+  border-radius: 5px; /* Rounded corners */
+  position: absolute; /* Position it absolutely within its parent */
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  z-index: 1; /* Ensure it's on top of other content */
+  animation: fadeOut 2s ease-in-out forwards; /* Fade out animation */
+}
+
+/* Define a fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
