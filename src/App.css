@@ -25,6 +25,7 @@ height: 100vh;
 
 .counter{
   text-align: center;
+  padding: 25px;
 }
 .colorizer button {
   cursor: pointer;
